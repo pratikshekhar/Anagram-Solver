@@ -1,0 +1,67 @@
+Name: Pratik Shekhar
+Email: ps599@drexel.edu
+Course: CS283 Systems Programming 
+
+
+
+There are three different menthods to run the anagramfile program:
+
+I. To run the anagram program, the user must do the following:
+
+1. The user must compile the program first by typing the following:
+	 gcc -o anagramfile anagramfile.c
+2. 	 ./anagram
+
+II. To run the program using make file:
+
+1. Type "make anagramfile" and hit enter. 
+
+III. To run the program using make file by passing an argument:
+
+1. Type "make anagram WORD=<type_the_word_here> "
+	example: make anagramfile WORD=past or make anagramfile WORD="past"
+
+
+NOTE: If you run the program using third method by passing any word as an argument at console like tap's or cap's, it will flag an error otherwise it works perfectly fine if you run the program from the first two method.
+
+
+To run the scrabble program:
+
+I. make scrabble WORD=post LETTER=o PLACE=2
+
+
+
+
+Results from the test case(s) of anagramfile.c - TEST RUNS:
+
+Pratiks-MacBook-Pro-2:G1 pratikshekhar$ make anagramfile 
+One argument expected.
+Enter a word for the anagram program
+past
+Anagram word: taps
+Anagram word: stap
+Anagram word: spat
+Anagram word: past
+
+Pratiks-MacBook-Pro-2:G1 pratikshekhar$ make anagramfile WORD=past
+The argument supplied is past
+Anagram word: taps
+Anagram word: stap
+Anagram word: spat
+Anagram word: past
+
+Results from the test case(s) of scrabble.c - TEST RUNS:
+
+Pratiks-MacBook-Pro-2:G1 pratikshekhar$ WORD=post LETTER=o PLACE=2 make scrabble
+Scrabble word: tops
+Scrabble word: post
+
+I really enjoyed this assignment as I got to learn more about C and it helped me refresh my knowledge of Hash Tables. I took help from my class mates, TA's during office hours and looked online for help and understanding the concept in details. 
+
+Following are the website I visited online for help:
+
+http://www.geeksforgeeks.org/union-and-intersection-of-two-linked-lists/
+http://www.cplusplus.com/reference/cstring/strstr/
+http://www.tutorialspoint.com/c_standard_library/c_function_strstr.htm
+https://www.youtube.com/watch?v=MfhjkfocRR0
+
